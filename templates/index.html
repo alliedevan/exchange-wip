@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h1>Do you wish to add a user?</h1>
+<br>
+<form action="" method="post">
+  <input type="text" placeholder="Yes or no" name="adduser" value="{{
+    request.form.adduser }}">
+  <input class="btn btn-default" type="submit" value="Add?">
+</form>
+<br>
+<p>Click <a href="/logout">here</a> to logout.</p>
+<br><br>
+
+{% endblock %}

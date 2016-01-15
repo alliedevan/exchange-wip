@@ -1,0 +1,11 @@
+different flash messages - 
+
+start with pshell (valid) and transition to confirmation screen
+
+--->
+
+email generation  
+
+--->
+
+better formatting

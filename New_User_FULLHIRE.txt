@@ -1,0 +1,484 @@
+## first pshell command: check for user exist
+
+New user request page:
+(full hire)
+
+NAME: (required) write in
+
+OFFICE: (required) drop down
+
+TITLE: (required) write in 
+
+NEEDS PC? (optional) drop down 
+
+NEEDS PHONE (optional) drop down 
+
+randomly generated password 
+
+lync? - reminder for now; but pshell?
+
+example:
+Set-AdUser -Identity KCrowley -Office "Boston" -Company "Allied Integrated Marketing" -Title "Coordinator" -OfficePhone "617-844-1754" -MobilePhone "617-538-8005" -StreetAddress "55 Cambridge Parkway Suite 200" -City "Cambridge" -State "MA" -PostalCode "02142" -server alliedadvpub.com
+
+New-ADUser [-Name] <string> [-AccountExpirationDate <System.Nullable[System.DateTime]>] [-AccountNotDelegated <System.Nullable[bool]>] [-AccountPassword <SecureString>] [-AllowReversiblePasswordEncryption <System.Nullable[bool]>] [-AuthType {<Negotiate> | <Basic>}] [-CannotChangePassword <System.Nullable[bool]>] [-Certificates <X509Certificate[]>] [-ChangePasswordAtLogon <System.Nullable[bool]>] [-City <string>] [-Company <string>] [-Country <string>] [-Credential <PSCredential>] [-Department <string>] [-Description <string>] [-DisplayName <string>] [-Division <string>] [-EmailAddress <string>] [-EmployeeID <string>] [-EmployeeNumber <string>] [-Enabled <System.Nullable[bool]>] [-Fax <string>] [-GivenName <string>] [-HomeDirectory <string>] [-HomeDrive <string>] [-HomePage <string>] [-HomePhone <string>] [-Initials <string>] [-Instance <ADUser>] [-LogonWorkstations <string>] [-Manager <ADUser>] [-MobilePhone <string>] [-Office <string>] [-OfficePhone <string>] [-Organization <string>] [-OtherAttributes <hashtable>] [-OtherName <string>] [-PassThru <switch>] [-PasswordNeverExpires <System.Nullable[bool]>] [-PasswordNotRequired <System.Nullable[bool]>] [-Path <string>] [-POBox <string>] [-PostalCode <string>] [-ProfilePath <string>] [-SamAccountName <string>] [-ScriptPath <string>] [-Server <string>] [-ServicePrincipalNames <string[]>] [-SmartcardLogonRequired <System.Nullable[bool]>] [-State <string>] [-StreetAddress <string>] [-Surname <string>] [-Title <string>] [-TrustedForDelegation <System.Nullable[bool]>] [-Type <string>] [-UserPrincipalName <string>] [-Confirm] [-WhatIf] [<CommonParameters>]
+
+
+
+
+New-ADUser -AccountPassword PASSWORDVAR -City CITYVAR -Company COMPANYVAR -Country COUNTRYVAR -Department DEPTVAR -Description DESCRVAR -DisplayName DISPLNAMEVAR -Enabled $true -GivenName GIVENNAMEVAR -Office OFFICEVAR -Organization ORGANIZATIONVAR -PasswordNeverExpires $true -PostalCode ZIPVAR -SamAccountName USERNAMEVAR -ScriptPath SCRIPTVAR -Server SERVERVAR -State STATEVAR -StreetAddress ADDRESSVAR -Surname SURNAMEVAR -Title TITLEVAR -UserPrincipalName UPNVAR -Confirm
+
+
+VARIABLES:
+
+PASSWORDVAR      
+CITYVAR
+COMPANYVAR
+COUNTRYVAR
+DEPTVAR
+DESCRVAR
+DISPLNAMEVAR
+GIVENNAMEVAR
+OFFICEVAR
+ORGANIZATIONVAR
+ZIPVAR
+USERNAMEVAR
+SCRIPTVAR
+SERVERVAR
+STATEVAR
+ADDRESSVAR
+SURNAMEVAR
+TITLEVAR
+UPNVAR
+
+categories: 
+	STATIC VALUES
+		city
+		company
+		country
+		dept
+		description
+		office
+		zipcode
+		script (.bat)
+		server
+		state
+		address
+		password (randomized by city)
+
+	USER GENERATED VALUES (or derived) 
+		firstname
+		lastname
+		displayname
+		title
+		upn
+
+(dynamic dictionary is in app.py and should look at a separate file to find its data; imported)
+
+(remote dict is a dict of dicts; let's simplify if possible)
+
+dynamicOfficeDict = {
+    'ERMKT': [
+        extList[ERMKT][city],
+        extList[ERMKT][company],
+        extList[ERMKT][country],
+        extList[ERMKT][dept],
+        extList[ERMKT][description],
+        extList[ERMKT][office],
+        extList[ERMKT][zipcode],
+        extList[ERMKT][script],
+        extList[ERMKT][server],
+        extList[ERMKT][state],
+        extList[ERMKT][address],
+        extList[ERMKT][password],
+    ],
+    'LIVE': [
+        extList[LIVE][city],
+        extList[LIVE][company],
+        extList[LIVE][country],
+        extList[LIVE][dept],
+        extList[LIVE][description],
+        extList[LIVE][office],
+        extList[LIVE][zipcode],
+        extList[LIVE][script],
+        extList[LIVE][server],
+        extList[LIVE][state],
+        extList[LIVE][address],
+        extList[LIVE][password],
+    ],
+    'BOSTON': [
+        extList[BOSTON][city],
+        extList[BOSTON][company],
+        extList[BOSTON][country],
+        extList[BOSTON][dept],
+        extList[BOSTON][description],
+        extList[BOSTON][office],
+        extList[BOSTON][zipcode],
+        extList[BOSTON][script],
+        extList[BOSTON][server],
+        extList[BOSTON][state],
+        extList[BOSTON][address],
+        extList[BOSTON][password],
+    ],
+    'NEWYORK': [
+        extList[NEWYORK][city],
+        extList[NEWYORK][company],
+        extList[NEWYORK][country],
+        extList[NEWYORK][dept],
+        extList[NEWYORK][description],
+        extList[NEWYORK][office],
+        extList[NEWYORK][zipcode],
+        extList[NEWYORK][script],
+        extList[NEWYORK][server],
+        extList[NEWYORK][state],
+        extList[NEWYORK][address],
+        extList[NEWYORK][password],
+    ],
+    'LOSANGELES': [
+        extList[LOSANGELES][city],
+        extList[LOSANGELES][company],
+        extList[LOSANGELES][country],
+        extList[LOSANGELES][dept],
+        extList[LOSANGELES][description],
+        extList[LOSANGELES][office],
+        extList[LOSANGELES][zipcode],
+        extList[LOSANGELES][script],
+        extList[LOSANGELES][server],
+        extList[LOSANGELES][state],
+        extList[LOSANGELES][address],
+        extList[LOSANGELES][password],
+    ],
+    'ATLANTA': [
+        extList[ATLANTA][city],
+        extList[ATLANTA][company],
+        extList[ATLANTA][country],
+        extList[ATLANTA][dept],
+        extList[ATLANTA][description],
+        extList[ATLANTA][office],
+        extList[ATLANTA][zipcode],
+        extList[ATLANTA][script],
+        extList[ATLANTA][server],
+        extList[ATLANTA][state],
+        extList[ATLANTA][address],
+        extList[ATLANTA][password],
+    ],
+    'ATLANTAVININGS': [
+        extList[ATLANTAVININGS][city],
+        extList[ATLANTAVININGS][company],
+        extList[ATLANTAVININGS][country],
+        extList[ATLANTAVININGS][dept],
+        extList[ATLANTAVININGS][description],
+        extList[ATLANTAVININGS][office],
+        extList[ATLANTAVININGS][zipcode],
+        extList[ATLANTAVININGS][script],
+        extList[ATLANTAVININGS][server],
+        extList[ATLANTAVININGS][state],
+        extList[ATLANTAVININGS][address],
+        extList[ATLANTAVININGS][password],
+    ],
+    'CHICAGO': [
+        extList[CHICAGO][city],
+        extList[CHICAGO][company],
+        extList[CHICAGO][country],
+        extList[CHICAGO][dept],
+        extList[CHICAGO][description],
+        extList[CHICAGO][office],
+        extList[CHICAGO][zipcode],
+        extList[CHICAGO][script],
+        extList[CHICAGO][server],
+        extList[CHICAGO][state],
+        extList[CHICAGO][address],
+        extList[CHICAGO][password],
+    ],
+    'CLEVELAND': [
+        extList[CLEVELAND][city],
+        extList[CLEVELAND][company],
+        extList[CLEVELAND][country],
+        extList[CLEVELAND][dept],
+        extList[CLEVELAND][description],
+        extList[CLEVELAND][office],
+        extList[CLEVELAND][zipcode],
+        extList[CLEVELAND][script],
+        extList[CLEVELAND][server],
+        extList[CLEVELAND][state],
+        extList[CLEVELAND][address],
+        extList[CLEVELAND][password],
+    ],
+    'DALLAS': [
+        extList[DALLAS][city],
+        extList[DALLAS][company],
+        extList[DALLAS][country],
+        extList[DALLAS][dept],
+        extList[DALLAS][description],
+        extList[DALLAS][office],
+        extList[DALLAS][zipcode],
+        extList[DALLAS][script],
+        extList[DALLAS][server],
+        extList[DALLAS][state],
+        extList[DALLAS][address],
+        extList[DALLAS][password],
+    ],
+    'DENVER': [
+        extList[DENVER][city],
+        extList[DENVER][company],
+        extList[DENVER][country],
+        extList[DENVER][dept],
+        extList[DENVER][description],
+        extList[DENVER][office],
+        extList[DENVER][zipcode],
+        extList[DENVER][script],
+        extList[DENVER][server],
+        extList[DENVER][state],
+        extList[DENVER][address],
+        extList[DENVER][password],
+    ],
+    'DETROIT': [
+        extList[DETROIT][city],
+        extList[DETROIT][company],
+        extList[DETROIT][country],
+        extList[DETROIT][dept],
+        extList[DETROIT][description],
+        extList[DETROIT][office],
+        extList[DETROIT][zipcode],
+        extList[DETROIT][script],
+        extList[DETROIT][server],
+        extList[DETROIT][state],
+        extList[DETROIT][address],
+        extList[DETROIT][password],
+    ],
+    'FLORIDA': [
+        extList[FLORIDA][city],
+        extList[FLORIDA][company],
+        extList[FLORIDA][country],
+        extList[FLORIDA][dept],
+        extList[FLORIDA][description],
+        extList[FLORIDA][office],
+        extList[FLORIDA][zipcode],
+        extList[FLORIDA][script],
+        extList[FLORIDA][server],
+        extList[FLORIDA][state],
+        extList[FLORIDA][address],
+        extList[FLORIDA][password],
+    ],
+    'HOUSTON': [
+        extList[HOUSTON][city],
+        extList[HOUSTON][company],
+        extList[HOUSTON][country],
+        extList[HOUSTON][dept],
+        extList[HOUSTON][description],
+        extList[HOUSTON][office],
+        extList[HOUSTON][zipcode],
+        extList[HOUSTON][script],
+        extList[HOUSTON][server],
+        extList[HOUSTON][state],
+        extList[HOUSTON][address],
+        extList[HOUSTON][password],
+    ],
+    'KANSASCITY': [
+        extList[KANSASCITY][city],
+        extList[KANSASCITY][company],
+        extList[KANSASCITY][country],
+        extList[KANSASCITY][dept],
+        extList[KANSASCITY][description],
+        extList[KANSASCITY][office],
+        extList[KANSASCITY][zipcode],
+        extList[KANSASCITY][script],
+        extList[KANSASCITY][server],
+        extList[KANSASCITY][state],
+        extList[KANSASCITY][address],
+        extList[KANSASCITY][password],
+    ],
+    'LASVEGAS': [
+        extList[LASVEGAS][city],
+        extList[LASVEGAS][company],
+        extList[LASVEGAS][country],
+        extList[LASVEGAS][dept],
+        extList[LASVEGAS][description],
+        extList[LASVEGAS][office],
+        extList[LASVEGAS][zipcode],
+        extList[LASVEGAS][script],
+        extList[LASVEGAS][server],
+        extList[LASVEGAS][state],
+        extList[LASVEGAS][address],
+        extList[LASVEGAS][password],
+    ],
+    'MINNEAPOLIS': [
+        extList[MINNEAPOLIS][city],
+        extList[MINNEAPOLIS][company],
+        extList[MINNEAPOLIS][country],
+        extList[MINNEAPOLIS][dept],
+        extList[MINNEAPOLIS][description],
+        extList[MINNEAPOLIS][office],
+        extList[MINNEAPOLIS][zipcode],
+        extList[MINNEAPOLIS][script],
+        extList[MINNEAPOLIS][server],
+        extList[MINNEAPOLIS][state],
+        extList[MINNEAPOLIS][address],
+        extList[MINNEAPOLIS][password],
+    ],
+    'PHILADELPHIA': [
+        extList[PHILADELPHIA][city],
+        extList[PHILADELPHIA][company],
+        extList[PHILADELPHIA][country],
+        extList[PHILADELPHIA][dept],
+        extList[PHILADELPHIA][description],
+        extList[PHILADELPHIA][office],
+        extList[PHILADELPHIA][zipcode],
+        extList[PHILADELPHIA][script],
+        extList[PHILADELPHIA][server],
+        extList[PHILADELPHIA][state],
+        extList[PHILADELPHIA][address],
+        extList[PHILADELPHIA][password],
+    ],
+    'PHOENIX': [
+        extList[PHOENIX][city],
+        extList[PHOENIX][company],
+        extList[PHOENIX][country],
+        extList[PHOENIX][dept],
+        extList[PHOENIX][description],
+        extList[PHOENIX][office],
+        extList[PHOENIX][zipcode],
+        extList[PHOENIX][script],
+        extList[PHOENIX][server],
+        extList[PHOENIX][state],
+        extList[PHOENIX][address],
+        extList[PHOENIX][password],
+    ],
+    'SANFRANCISCO': [
+        extList[SANFRANCISCO][city],
+        extList[SANFRANCISCO][company],
+        extList[SANFRANCISCO][country],
+        extList[SANFRANCISCO][dept],
+        extList[SANFRANCISCO][description],
+        extList[SANFRANCISCO][office],
+        extList[SANFRANCISCO][zipcode],
+        extList[SANFRANCISCO][script],
+        extList[SANFRANCISCO][server],
+        extList[SANFRANCISCO][state],
+        extList[SANFRANCISCO][address],
+        extList[SANFRANCISCO][password],
+    ],
+    'SANDIEGO': [
+        extList[SANDIEGO][city],
+        extList[SANDIEGO][company],
+        extList[SANDIEGO][country],
+        extList[SANDIEGO][dept],
+        extList[SANDIEGO][description],
+        extList[SANDIEGO][office],
+        extList[SANDIEGO][zipcode],
+        extList[SANDIEGO][script],
+        extList[SANDIEGO][server],
+        extList[SANDIEGO][state],
+        extList[SANDIEGO][address],
+        extList[SANDIEGO][password],
+    ],
+    'SEATTLE': [
+        extList[SEATTLE][city],
+        extList[SEATTLE][company],
+        extList[SEATTLE][country],
+        extList[SEATTLE][dept],
+        extList[SEATTLE][description],
+        extList[SEATTLE][office],
+        extList[SEATTLE][zipcode],
+        extList[SEATTLE][script],
+        extList[SEATTLE][server],
+        extList[SEATTLE][state],
+        extList[SEATTLE][address],
+        extList[SEATTLE][password],
+    ],
+    'STLOUIS': [
+        extList[STLOUIS][city],
+        extList[STLOUIS][company],
+        extList[STLOUIS][country],
+        extList[STLOUIS][dept],
+        extList[STLOUIS][description],
+        extList[STLOUIS][office],
+        extList[STLOUIS][zipcode],
+        extList[STLOUIS][script],
+        extList[STLOUIS][server],
+        extList[STLOUIS][state],
+        extList[STLOUIS][address],
+        extList[STLOUIS][password],
+    ],
+    'WASHINGTONDC': [
+        extList[WASHINGTONDC][city],
+        extList[WASHINGTONDC][company],
+        extList[WASHINGTONDC][country],
+        extList[WASHINGTONDC][dept],
+        extList[WASHINGTONDC][description],
+        extList[WASHINGTONDC][office],
+        extList[WASHINGTONDC][zipcode],
+        extList[WASHINGTONDC][script],
+        extList[WASHINGTONDC][server],
+        extList[WASHINGTONDC][state],
+        extList[WASHINGTONDC][address],
+        extList[WASHINGTONDC][password],
+    ],
+    'TORONTO': [
+        extList[TORONTO][city],
+        extList[TORONTO][company],
+        extList[TORONTO][country],
+        extList[TORONTO][dept],
+        extList[TORONTO][description],
+        extList[TORONTO][office],
+        extList[TORONTO][zipcode],
+        extList[TORONTO][script],
+        extList[TORONTO][server],
+        extList[TORONTO][state],
+        extList[TORONTO][address],
+        extList[TORONTO][password],
+    ],
+    'GCM': [
+        extList[GCM][city],
+        extList[GCM][company],
+        extList[GCM][country],
+        extList[GCM][dept],
+        extList[GCM][description],
+        extList[GCM][office],
+        extList[GCM][zipcode],
+        extList[GCM][script],
+        extList[GCM][server],
+        extList[GCM][state],
+        extList[GCM][address],
+        extList[GCM][password],
+   ],
+}
+
+so...
+
+key:
+        0 [city],
+        1 [company],
+        2 [country],
+        3 [dept],
+        4 [description],
+        5 [office],
+        6 [organization],
+        7 [zipcode],
+        8 [script],
+        9 [server],
+       10 [state],
+       11 [address],
+       12 [password],
+
+static var:
+CITYVAR = dynamicOfficeDict[cityInput][0]
+COMPANYVAR = dynamicOfficeDict[cityInput][1] 
+COUNTRYVAR = dynamicOfficeDict[cityInput][2]
+DEPTVAR = dynamicOfficeDict[cityInput][3]
+DESCRVAR = dynamicOfficeDict[cityInput][4]
+OFFICEVAR = dynamicOfficeDict[cityInput][5]
+ORGANIZATIONVAR = dynamicOfficeDict[cityInput][6]
+ZIPVAR = dynamicOfficeDict[cityInput][7]
+SCRIPTVAR = dynamicOfficeDict[cityInput][8]
+SERVERVAR = dynamicOfficeDict[cityInput][9]
+STATEVAR = dynamicOfficeDict[cityInput][10]
+ADDRESSVAR = dynamicOfficeDict[cityInput][11]
+PASSWORDVAR = hash(dynamicOfficeDict[cityInput][12]) 
+
+dynamic var:
+USERNAMEVAR = dynamicOfficeDict[cityInput][0]
+DISPLNAMEVAR = dynamicOfficeDict[cityInput][0]
+GIVENNAMEVAR = dynamicOfficeDict[cityInput][0]
+SURNAMEVAR = dynamicOfficeDict[cityInput][0]
+TITLEVAR = dynamicOfficeDict[cityInput][0]
+UPNVAR = dynamicOfficeDict[cityInput][0]
