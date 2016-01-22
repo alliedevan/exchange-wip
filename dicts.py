@@ -5,7 +5,6 @@ dynamicOfficeDict = {
         extList['ERMKT']['city'],
         extList['ERMKT']['company'],
         extList['ERMKT']['country'],
-        extList['ERMKT']['dept'],
         extList['ERMKT']['description'],
         extList['ERMKT']['office'],
         extList['ERMKT']['zipcode'],
@@ -13,13 +12,12 @@ dynamicOfficeDict = {
         extList['ERMKT']['server'],
         extList['ERMKT']['state'],
         extList['ERMKT']['address'],
-        extList['ERMKT']['password']
+        "ERM Research"
     ],
     'LIVE-CHI': [
         extList['LIVE-CHI']['city'],
         extList['LIVE-CHI']['company'],
         extList['LIVE-CHI']['country'],
-        extList['LIVE-CHI']['dept'],
         extList['LIVE-CHI']['description'],
         extList['LIVE-CHI']['office'],
         extList['LIVE-CHI']['zipcode'],
@@ -27,13 +25,12 @@ dynamicOfficeDict = {
         extList['LIVE-CHI']['server'],
         extList['LIVE-CHI']['state'],
         extList['LIVE-CHI']['address'],
-        extList['LIVE-CHI']['password']
+        "Allied Live"
     ],
     'LIVE-WDC': [
         extList['LIVE-WDC']['city'],
         extList['LIVE-WDC']['company'],
         extList['LIVE-WDC']['country'],
-        extList['LIVE-WDC']['dept'],
         extList['LIVE-WDC']['description'],
         extList['LIVE-WDC']['office'],
         extList['LIVE-WDC']['zipcode'],
@@ -41,13 +38,12 @@ dynamicOfficeDict = {
         extList['LIVE-WDC']['server'],
         extList['LIVE-WDC']['state'],
         extList['LIVE-WDC']['address'],
-        extList['LIVE-WDC']['password']
+        "Allied Live"
     ],
     'LIVE-LA': [
         extList['LIVE-LA']['city'],
         extList['LIVE-LA']['company'],
         extList['LIVE-LA']['country'],
-        extList['LIVE-LA']['dept'],
         extList['LIVE-LA']['description'],
         extList['LIVE-LA']['office'],
         extList['LIVE-LA']['zipcode'],
@@ -55,13 +51,12 @@ dynamicOfficeDict = {
         extList['LIVE-LA']['server'],
         extList['LIVE-LA']['state'],
         extList['LIVE-LA']['address'],
-        extList['LIVE-LA']['password']
+        "Allied Live"
     ],
     'BOSTON': [
         extList['BOSTON']['city'],
         extList['BOSTON']['company'],
         extList['BOSTON']['country'],
-        extList['BOSTON']['dept'],
         extList['BOSTON']['description'],
         extList['BOSTON']['office'],
         extList['BOSTON']['zipcode'],
@@ -69,13 +64,12 @@ dynamicOfficeDict = {
         extList['BOSTON']['server'],
         extList['BOSTON']['state'],
         extList['BOSTON']['address'],
-        extList['BOSTON']['password']
+        "Allied Integrated Marketing"
     ],
     'NEWYORK': [
         extList['NEWYORK']['city'],
         extList['NEWYORK']['company'],
         extList['NEWYORK']['country'],
-        extList['NEWYORK']['dept'],
         extList['NEWYORK']['description'],
         extList['NEWYORK']['office'],
         extList['NEWYORK']['zipcode'],
@@ -83,13 +77,12 @@ dynamicOfficeDict = {
         extList['NEWYORK']['server'],
         extList['NEWYORK']['state'],
         extList['NEWYORK']['address'],
-        extList['NEWYORK']['password']
+        "Allied Integrated Marketing"
     ],
     'LOSANGELES': [
         extList['LOSANGELES']['city'],
         extList['LOSANGELES']['company'],
         extList['LOSANGELES']['country'],
-        extList['LOSANGELES']['dept'],
         extList['LOSANGELES']['description'],
         extList['LOSANGELES']['office'],
         extList['LOSANGELES']['zipcode'],
@@ -97,13 +90,12 @@ dynamicOfficeDict = {
         extList['LOSANGELES']['server'],
         extList['LOSANGELES']['state'],
         extList['LOSANGELES']['address'],
-        extList['LOSANGELES']['password']
+        "Allied Integrated Marketing"
     ],
     'ATLANTA': [
         extList['ATLANTA']['city'],
         extList['ATLANTA']['company'],
         extList['ATLANTA']['country'],
-        extList['ATLANTA']['dept'],
         extList['ATLANTA']['description'],
         extList['ATLANTA']['office'],
         extList['ATLANTA']['zipcode'],
@@ -111,13 +103,12 @@ dynamicOfficeDict = {
         extList['ATLANTA']['server'],
         extList['ATLANTA']['state'],
         extList['ATLANTA']['address'],
-        extList['ATLANTA']['password']
+        "Allied Integrated Marketing"
     ],
     'ATLANTA-VININGS': [
         extList['ATLANTA-VININGS']['city'],
         extList['ATLANTA-VININGS']['company'],
         extList['ATLANTA-VININGS']['country'],
-        extList['ATLANTA-VININGS']['dept'],
         extList['ATLANTA-VININGS']['description'],
         extList['ATLANTA-VININGS']['office'],
         extList['ATLANTA-VININGS']['zipcode'],
@@ -125,13 +116,12 @@ dynamicOfficeDict = {
         extList['ATLANTA-VININGS']['server'],
         extList['ATLANTA-VININGS']['state'],
         extList['ATLANTA-VININGS']['address'],
-        extList['ATLANTA-VININGS']['password']
+        "Allied Integrated Marketing"
     ],
     'CHICAGO': [
         extList['CHICAGO']['city'],
         extList['CHICAGO']['company'],
         extList['CHICAGO']['country'],
-        extList['CHICAGO']['dept'],
         extList['CHICAGO']['description'],
         extList['CHICAGO']['office'],
         extList['CHICAGO']['zipcode'],
@@ -139,13 +129,12 @@ dynamicOfficeDict = {
         extList['CHICAGO']['server'],
         extList['CHICAGO']['state'],
         extList['CHICAGO']['address'],
-        extList['CHICAGO']['password']
+        "Allied Integrated Marketing"
     ],
     'CLEVELAND': [
         extList['CLEVELAND']['city'],
         extList['CLEVELAND']['company'],
         extList['CLEVELAND']['country'],
-        extList['CLEVELAND']['dept'],
         extList['CLEVELAND']['description'],
         extList['CLEVELAND']['office'],
         extList['CLEVELAND']['zipcode'],
@@ -153,13 +142,12 @@ dynamicOfficeDict = {
         extList['CLEVELAND']['server'],
         extList['CLEVELAND']['state'],
         extList['CLEVELAND']['address'],
-        extList['CLEVELAND']['password']
+        "Allied Integrated Marketing"
     ],
     'DALLAS': [
         extList['DALLAS']['city'],
         extList['DALLAS']['company'],
         extList['DALLAS']['country'],
-        extList['DALLAS']['dept'],
         extList['DALLAS']['description'],
         extList['DALLAS']['office'],
         extList['DALLAS']['zipcode'],
@@ -167,13 +155,12 @@ dynamicOfficeDict = {
         extList['DALLAS']['server'],
         extList['DALLAS']['state'],
         extList['DALLAS']['address'],
-        extList['DALLAS']['password']
+        "Allied Integrated Marketing"
     ],
     'DENVER': [
         extList['DENVER']['city'],
         extList['DENVER']['company'],
         extList['DENVER']['country'],
-        extList['DENVER']['dept'],
         extList['DENVER']['description'],
         extList['DENVER']['office'],
         extList['DENVER']['zipcode'],
@@ -181,13 +168,12 @@ dynamicOfficeDict = {
         extList['DENVER']['server'],
         extList['DENVER']['state'],
         extList['DENVER']['address'],
-        extList['DENVER']['password']
+        "Allied Integrated Marketing"
     ],
     'DETROIT': [
         extList['DETROIT']['city'],
         extList['DETROIT']['company'],
         extList['DETROIT']['country'],
-        extList['DETROIT']['dept'],
         extList['DETROIT']['description'],
         extList['DETROIT']['office'],
         extList['DETROIT']['zipcode'],
@@ -195,13 +181,12 @@ dynamicOfficeDict = {
         extList['DETROIT']['server'],
         extList['DETROIT']['state'],
         extList['DETROIT']['address'],
-        extList['DETROIT']['password']
+        "Allied Integrated Marketing"
     ],
     'FLORIDA': [
         extList['FLORIDA']['city'],
         extList['FLORIDA']['company'],
         extList['FLORIDA']['country'],
-        extList['FLORIDA']['dept'],
         extList['FLORIDA']['description'],
         extList['FLORIDA']['office'],
         extList['FLORIDA']['zipcode'],
@@ -209,13 +194,12 @@ dynamicOfficeDict = {
         extList['FLORIDA']['server'],
         extList['FLORIDA']['state'],
         extList['FLORIDA']['address'],
-        extList['FLORIDA']['password']
+        "Allied Integrated Marketing"
     ],
     'HOUSTON': [
         extList['HOUSTON']['city'],
         extList['HOUSTON']['company'],
         extList['HOUSTON']['country'],
-        extList['HOUSTON']['dept'],
         extList['HOUSTON']['description'],
         extList['HOUSTON']['office'],
         extList['HOUSTON']['zipcode'],
@@ -223,13 +207,12 @@ dynamicOfficeDict = {
         extList['HOUSTON']['server'],
         extList['HOUSTON']['state'],
         extList['HOUSTON']['address'],
-        extList['HOUSTON']['password']
+        "Allied Integrated Marketing"
     ],
     'KANSASCITY': [
         extList['KANSASCITY']['city'],
         extList['KANSASCITY']['company'],
         extList['KANSASCITY']['country'],
-        extList['KANSASCITY']['dept'],
         extList['KANSASCITY']['description'],
         extList['KANSASCITY']['office'],
         extList['KANSASCITY']['zipcode'],
@@ -237,13 +220,12 @@ dynamicOfficeDict = {
         extList['KANSASCITY']['server'],
         extList['KANSASCITY']['state'],
         extList['KANSASCITY']['address'],
-        extList['KANSASCITY']['password']
+        "Allied Integrated Marketing"
     ],
     'LASVEGAS': [
         extList['LASVEGAS']['city'],
         extList['LASVEGAS']['company'],
         extList['LASVEGAS']['country'],
-        extList['LASVEGAS']['dept'],
         extList['LASVEGAS']['description'],
         extList['LASVEGAS']['office'],
         extList['LASVEGAS']['zipcode'],
@@ -251,13 +233,12 @@ dynamicOfficeDict = {
         extList['LASVEGAS']['server'],
         extList['LASVEGAS']['state'],
         extList['LASVEGAS']['address'],
-        extList['LASVEGAS']['password']
+        "Allied Integrated Marketing"
     ],
     'MINNEAPOLIS': [
         extList['MINNEAPOLIS']['city'],
         extList['MINNEAPOLIS']['company'],
         extList['MINNEAPOLIS']['country'],
-        extList['MINNEAPOLIS']['dept'],
         extList['MINNEAPOLIS']['description'],
         extList['MINNEAPOLIS']['office'],
         extList['MINNEAPOLIS']['zipcode'],
@@ -265,13 +246,12 @@ dynamicOfficeDict = {
         extList['MINNEAPOLIS']['server'],
         extList['MINNEAPOLIS']['state'],
         extList['MINNEAPOLIS']['address'],
-        extList['MINNEAPOLIS']['password']
+        "Allied Integrated Marketing"
     ],
     'PHILADELPHIA': [
         extList['PHILADELPHIA']['city'],
         extList['PHILADELPHIA']['company'],
         extList['PHILADELPHIA']['country'],
-        extList['PHILADELPHIA']['dept'],
         extList['PHILADELPHIA']['description'],
         extList['PHILADELPHIA']['office'],
         extList['PHILADELPHIA']['zipcode'],
@@ -279,13 +259,12 @@ dynamicOfficeDict = {
         extList['PHILADELPHIA']['server'],
         extList['PHILADELPHIA']['state'],
         extList['PHILADELPHIA']['address'],
-        extList['PHILADELPHIA']['password']
+        "Allied Integrated Marketing"
     ],
     'PHOENIX': [
         extList['PHOENIX']['city'],
         extList['PHOENIX']['company'],
         extList['PHOENIX']['country'],
-        extList['PHOENIX']['dept'],
         extList['PHOENIX']['description'],
         extList['PHOENIX']['office'],
         extList['PHOENIX']['zipcode'],
@@ -293,13 +272,12 @@ dynamicOfficeDict = {
         extList['PHOENIX']['server'],
         extList['PHOENIX']['state'],
         extList['PHOENIX']['address'],
-        extList['PHOENIX']['password']
+        "Allied Integrated Marketing"
     ],
     'SANFRANCISCO': [
         extList['SANFRANCISCO']['city'],
         extList['SANFRANCISCO']['company'],
         extList['SANFRANCISCO']['country'],
-        extList['SANFRANCISCO']['dept'],
         extList['SANFRANCISCO']['description'],
         extList['SANFRANCISCO']['office'],
         extList['SANFRANCISCO']['zipcode'],
@@ -307,13 +285,12 @@ dynamicOfficeDict = {
         extList['SANFRANCISCO']['server'],
         extList['SANFRANCISCO']['state'],
         extList['SANFRANCISCO']['address'],
-        extList['SANFRANCISCO']['password']
+        "Allied Integrated Marketing"
     ],
     'SANDIEGO': [
         extList['SANDIEGO']['city'],
         extList['SANDIEGO']['company'],
         extList['SANDIEGO']['country'],
-        extList['SANDIEGO']['dept'],
         extList['SANDIEGO']['description'],
         extList['SANDIEGO']['office'],
         extList['SANDIEGO']['zipcode'],
@@ -321,13 +298,12 @@ dynamicOfficeDict = {
         extList['SANDIEGO']['server'],
         extList['SANDIEGO']['state'],
         extList['SANDIEGO']['address'],
-        extList['SANDIEGO']['password']
+        "Allied Integrated Marketing"
     ],
     'SEATTLE': [
         extList['SEATTLE']['city'],
         extList['SEATTLE']['company'],
         extList['SEATTLE']['country'],
-        extList['SEATTLE']['dept'],
         extList['SEATTLE']['description'],
         extList['SEATTLE']['office'],
         extList['SEATTLE']['zipcode'],
@@ -335,13 +311,12 @@ dynamicOfficeDict = {
         extList['SEATTLE']['server'],
         extList['SEATTLE']['state'],
         extList['SEATTLE']['address'],
-        extList['SEATTLE']['password']
+        "Allied Integrated Marketing"
     ],
     'STLOUIS': [
         extList['STLOUIS']['city'],
         extList['STLOUIS']['company'],
         extList['STLOUIS']['country'],
-        extList['STLOUIS']['dept'],
         extList['STLOUIS']['description'],
         extList['STLOUIS']['office'],
         extList['STLOUIS']['zipcode'],
@@ -349,13 +324,12 @@ dynamicOfficeDict = {
         extList['STLOUIS']['server'],
         extList['STLOUIS']['state'],
         extList['STLOUIS']['address'],
-        extList['STLOUIS']['password']
+        "Allied Integrated Marketing"
     ],
     'WASHINGTONDC': [
         extList['WASHINGTONDC']['city'],
         extList['WASHINGTONDC']['company'],
         extList['WASHINGTONDC']['country'],
-        extList['WASHINGTONDC']['dept'],
         extList['WASHINGTONDC']['description'],
         extList['WASHINGTONDC']['office'],
         extList['WASHINGTONDC']['zipcode'],
@@ -363,13 +337,12 @@ dynamicOfficeDict = {
         extList['WASHINGTONDC']['server'],
         extList['WASHINGTONDC']['state'],
         extList['WASHINGTONDC']['address'],
-        extList['WASHINGTONDC']['password']
+        "Allied Integrated Marketing"
     ],
     'TORONTO': [
         extList['TORONTO']['city'],
         extList['TORONTO']['company'],
         extList['TORONTO']['country'],
-        extList['TORONTO']['dept'],
         extList['TORONTO']['description'],
         extList['TORONTO']['office'],
         extList['TORONTO']['zipcode'],
@@ -377,13 +350,12 @@ dynamicOfficeDict = {
         extList['TORONTO']['server'],
         extList['TORONTO']['state'],
         extList['TORONTO']['address'],
-        extList['TORONTO']['password']
+        "Allied Integrated Marketing"
     ],
     'GCM-LA': [
         extList['GCM-LA']['city'],
         extList['GCM-LA']['company'],
         extList['GCM-LA']['country'],
-        extList['GCM-LA']['dept'],
         extList['GCM-LA']['description'],
         extList['GCM-LA']['office'],
         extList['GCM-LA']['zipcode'],
@@ -391,13 +363,12 @@ dynamicOfficeDict = {
         extList['GCM-LA']['server'],
         extList['GCM-LA']['state'],
         extList['GCM-LA']['address'],
-        extList['GCM-LA']['password'],
+        "Allied Experiential"
    ],
     'GCM-NY': [
         extList['GCM-NY']['city'],
         extList['GCM-NY']['company'],
         extList['GCM-NY']['country'],
-        extList['GCM-NY']['dept'],
         extList['GCM-NY']['description'],
         extList['GCM-NY']['office'],
         extList['GCM-NY']['zipcode'],
@@ -405,6 +376,6 @@ dynamicOfficeDict = {
         extList['GCM-NY']['server'],
         extList['GCM-NY']['state'],
         extList['GCM-NY']['address'],
-        extList['GCM-NY']['password'],
+        "Allied Experiential"
    ]
 }

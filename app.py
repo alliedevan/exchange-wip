@@ -49,19 +49,6 @@ def useradd():
             flash('Ah, ERM.  Paste this into powershell: New-ADUser -Name ' + DISPLNAMEVAR + ' -City ' + CITYVAR)
             return redirect(url_for('powershell'))
         elif request.form['addeduser'] and request.form['city']:
-#            CITYVAR = dynamicOfficeDict[cityInput][0]
-#            COMPANYVAR = dynamicOfficeDict[cityInput][1] 
-#            COUNTRYVAR = dynamicOfficeDict[cityInput][2]
-#            DEPTVAR = dynamicOfficeDict[cityInput][3]
-#            DESCRVAR = dynamicOfficeDict[cityInput][4]
-#            OFFICEVAR = dynamicOfficeDict[cityInput][5]
-#            ORGANIZATIONVAR = dynamicOfficeDict[cityInput][6]
-#            ZIPVAR = dynamicOfficeDict[cityInput][7]
-#            SCRIPTVAR = dynamicOfficeDict[cityInput][8]
-#            SERVERVAR = dynamicOfficeDict[cityInput][9]
-#            STATEVAR = dynamicOfficeDict[cityInput][10]
-#            ADDRESSVAR = dynamicOfficeDict[cityInput][11]
-#            PASSWORDVAR = ourHash(dynamicOfficeDict[cityInput][12]) 
             USERNAMEVAR = request.form['addeduser'] 
             DISPLNAMEVAR = request.form['addeduser']
             GIVENNAMEVAR = None 
@@ -75,9 +62,44 @@ def useradd():
             error = 'Please add both values; they are required.'
     return render_template('useradd.html', error=error)
 
+
+@app.route('/BIGuseradd', methods=['GET', 'POST'])
+@login_required
+def BIGuseradd():
+    error = None
+    if request.method == 'POST':
+        if request.form['firstname'] and request.form['lastname'] and request.form['city'] != 'null' and request.form['position'] and request.form['password']:
+            cityInput = request.form['city']  
+            CITYVAR = dynamicOfficeDict[cityInput][0]
+            COMPANYVAR = dynamicOfficeDict[cityInput][1] 
+            COUNTRYVAR = dynamicOfficeDict[cityInput][2]
+            DESCRVAR = dynamicOfficeDict[cityInput][3]
+            OFFICEVAR = dynamicOfficeDict[cityInput][4]
+            ORGANIZATIONVAR = dynamicOfficeDict[cityInput][10]
+            ZIPVAR = dynamicOfficeDict[cityInput][5]
+            SCRIPTVAR = dynamicOfficeDict[cityInput][6]
+            SERVERVAR = dynamicOfficeDict[cityInput][7]
+            STATEVAR = dynamicOfficeDict[cityInput][8]
+            ADDRESSVAR = dynamicOfficeDict[cityInput][9]
+            PASSWORDVAR = request.form['password'] 
+            GIVENNAMEVAR = request.form['firstname'] 
+            SURNAMEVAR = request.form['lastname']
+            DISPLNAMEVAR = GIVENNAMEVAR + ' ' + SURNAMEVAR
+            USERNAMEVAR = GIVENNAMEVAR[0] + SURNAMEVAR 
+            TITLEVAR = request.form['position'] 
+            UPNVAR = USERNAMEVAR + '@alliedim.com' 
+
+            flash('Paste this into powershell: New-ADUser -AccountPassword "' + PASSWORDVAR + '" -City "' + CITYVAR + '" -Company "' + COMPANYVAR + '" -Country "' + COUNTRYVAR + '" -Description "' + DESCRVAR + '" -DisplayName "' + DISPLNAMEVAR + '" -Enabled $true -GivenName "' + GIVENNAMEVAR + '" -Office "' + OFFICEVAR + '" -Organization "' + ORGANIZATIONVAR + '" -PasswordNeverExpires $true -PostalCode "' + ZIPVAR + '" -SamAccountName "' + USERNAMEVAR + '" -ScriptPath "' + SCRIPTVAR + '" -Server "' + SERVERVAR + '" -State "' + STATEVAR + '" -StreetAddress "' + ADDRESSVAR + '" -Surname "' + SURNAMEVAR + '" -Title "' + TITLEVAR + '" -UserPrincipalName "' + UPNVAR + '" -Confirm')
+            return redirect(url_for('powershell'))
+        else:
+            error = 'Please add all values; they are required.'
+    return render_template('BIGuseradd.html', error=error)
+
+
 @app.route('/powershell')
 def powershell():
     return render_template("powershell.html")
+
 
 @app.route('/goodbye')
 def goodbye():
