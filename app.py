@@ -75,7 +75,8 @@ def BIGuseradd():
             COUNTRYVAR = dynamicOfficeDict[cityInput][2]
             DESCRVAR = dynamicOfficeDict[cityInput][3]
             OFFICEVAR = dynamicOfficeDict[cityInput][4]
-            ORGANIZATIONVAR = dynamicOfficeDict[cityInput][10]
+	    OUVAR = dynamicOfficeDict[cityInput][10]
+            ORGANIZATIONVAR = dynamicOfficeDict[cityInput][11]
             ZIPVAR = dynamicOfficeDict[cityInput][5]
             SCRIPTVAR = dynamicOfficeDict[cityInput][6]
             SERVERVAR = dynamicOfficeDict[cityInput][7]
@@ -89,7 +90,7 @@ def BIGuseradd():
             TITLEVAR = request.form['position'] 
             UPNVAR = USERNAMEVAR + '@alliedim.com' 
 
-            flash('Paste this into powershell: New-ADUser -AccountPassword "' + PASSWORDVAR + '" -City "' + CITYVAR + '" -Company "' + COMPANYVAR + '" -Country "' + COUNTRYVAR + '" -Description "' + DESCRVAR + '" -DisplayName "' + DISPLNAMEVAR + '" -Enabled $true -GivenName "' + GIVENNAMEVAR + '" -Office "' + OFFICEVAR + '" -Organization "' + ORGANIZATIONVAR + '" -PasswordNeverExpires $true -PostalCode "' + ZIPVAR + '" -SamAccountName "' + USERNAMEVAR + '" -ScriptPath "' + SCRIPTVAR + '" -Server "' + SERVERVAR + '" -State "' + STATEVAR + '" -StreetAddress "' + ADDRESSVAR + '" -Surname "' + SURNAMEVAR + '" -Title "' + TITLEVAR + '" -UserPrincipalName "' + UPNVAR + '" -Confirm')
+            flash('Paste this into powershell: New-ADUser -Name "' + DISPLNAMEVAR + '" -AccountPassword (Read-Host -AsSecureString "AccountPassword") -City "' + CITYVAR + '" -Company "' + COMPANYVAR + '" -Country "' + COUNTRYVAR + '" -Description "' + DESCRVAR + '" -DisplayName "' + DISPLNAMEVAR + '" -Enabled $true -GivenName "' + GIVENNAMEVAR + '" -Office "' + OFFICEVAR + '" -Organization "' + ORGANIZATIONVAR + '" -PasswordNeverExpires $true -PostalCode "' + ZIPVAR + '" -SamAccountName "' + USERNAMEVAR + '" -ScriptPath "' + SCRIPTVAR + '" -Server "' + SERVERVAR + '" -State "' + STATEVAR + '" -StreetAddress "' + ADDRESSVAR + '" -Surname "' + SURNAMEVAR + '" -Title "' + TITLEVAR + '" -UserPrincipalName "' + UPNVAR + '" -Path "' + OUVAR + '" -Confirm')
             return redirect(url_for('powershell'))
         else:
             error = 'Please add all values; they are required.'

@@ -12,6 +12,7 @@ dynamicOfficeDict = {
         extList['ERMKT']['server'],
         extList['ERMKT']['state'],
         extList['ERMKT']['address'],
+	"OU=ERMKT Users,OU=ERMKT,DC=ERMKT,DC=alliedadvpub,DC=com",
         "ERM Research"
     ],
     'LIVE-CHI': [
@@ -25,6 +26,7 @@ dynamicOfficeDict = {
         extList['LIVE-CHI']['server'],
         extList['LIVE-CHI']['state'],
         extList['LIVE-CHI']['address'],
+        "OU=Chicago,OU=Users,OU=Allied Live,DC=live,DC=alliedadvpub,DC=com",
         "Allied Live"
     ],
     'LIVE-WDC': [
@@ -38,6 +40,7 @@ dynamicOfficeDict = {
         extList['LIVE-WDC']['server'],
         extList['LIVE-WDC']['state'],
         extList['LIVE-WDC']['address'],
+        "OU=Washington DC,OU=Users,OU=Allied Live,DC=live,DC=alliedadvpub,DC=com",
         "Allied Live"
     ],
     'LIVE-LA': [
@@ -51,6 +54,7 @@ dynamicOfficeDict = {
         extList['LIVE-LA']['server'],
         extList['LIVE-LA']['state'],
         extList['LIVE-LA']['address'],
+        "OU=Los Angeles,OU=Users,OU=Allied Live,DC=live,DC=alliedadvpub,DC=com",
         "Allied Live"
     ],
     'BOSTON': [
@@ -64,6 +68,7 @@ dynamicOfficeDict = {
         extList['BOSTON']['server'],
         extList['BOSTON']['state'],
         extList['BOSTON']['address'],
+        "OU=Users,OU=Boston,OU=Allied Advertising,DC=alliedadvpub,DC=com",
         "Allied Integrated Marketing"
     ],
     'NEWYORK': [
@@ -77,6 +82,7 @@ dynamicOfficeDict = {
         extList['NEWYORK']['server'],
         extList['NEWYORK']['state'],
         extList['NEWYORK']['address'],
+        "OU=Users,OU=New York,OU=Allied Advertising,DC=alliedadvpub,DC=com",
         "Allied Integrated Marketing"
     ],
     'LOSANGELES': [
@@ -90,6 +96,7 @@ dynamicOfficeDict = {
         extList['LOSANGELES']['server'],
         extList['LOSANGELES']['state'],
         extList['LOSANGELES']['address'],
+        "OU=Users - No Folder Redirection,OU=Los Angeles,DC=losangeles,DC=alliedadvpub,DC=com",
         "Allied Integrated Marketing"
     ],
     'ATLANTA': [
@@ -103,6 +110,7 @@ dynamicOfficeDict = {
         extList['ATLANTA']['server'],
         extList['ATLANTA']['state'],
         extList['ATLANTA']['address'],
+        "OU=Users,OU=Atlanta,OU=Allied Advertising,DC=atl,DC=alliedadvpub,DC=com",
         "Allied Integrated Marketing"
     ],
     'ATLANTA-VININGS': [
@@ -116,6 +124,7 @@ dynamicOfficeDict = {
         extList['ATLANTA-VININGS']['server'],
         extList['ATLANTA-VININGS']['state'],
         extList['ATLANTA-VININGS']['address'],
+        "OU=Users,OU=Atlanta,OU=Allied Advertising,DC=alliedadvpub,DC=com",
         "Allied Integrated Marketing"
     ],
     'CHICAGO': [
@@ -129,6 +138,7 @@ dynamicOfficeDict = {
         extList['CHICAGO']['server'],
         extList['CHICAGO']['state'],
         extList['CHICAGO']['address'],
+        "OU=Users,OU=Chicago,OU=Allied Advertising,DC=chi,DC=alliedadvpub,DC=com",
         "Allied Integrated Marketing"
     ],
     'CLEVELAND': [
@@ -142,6 +152,7 @@ dynamicOfficeDict = {
         extList['CLEVELAND']['server'],
         extList['CLEVELAND']['state'],
         extList['CLEVELAND']['address'],
+        "OU=Users,OU=Cleveland,OU=Allied Advertising,DC=alliedadvpub,DC=com",
         "Allied Integrated Marketing"
     ],
     'DALLAS': [
@@ -155,6 +166,7 @@ dynamicOfficeDict = {
         extList['DALLAS']['server'],
         extList['DALLAS']['state'],
         extList['DALLAS']['address'],
+        "OU=Users,OU=Dallas,OU=Texas,OU=Allied Advertising,DC=alliedadvpub,DC=com",
         "Allied Integrated Marketing"
     ],
     'DENVER': [
@@ -168,6 +180,7 @@ dynamicOfficeDict = {
         extList['DENVER']['server'],
         extList['DENVER']['state'],
         extList['DENVER']['address'],
+        "OU=Users,OU=Denver,OU=Allied Advertising,DC=den,DC=alliedadvpub,DC=com",
         "Allied Integrated Marketing"
     ],
     'DETROIT': [
@@ -181,6 +194,7 @@ dynamicOfficeDict = {
         extList['DETROIT']['server'],
         extList['DETROIT']['state'],
         extList['DETROIT']['address'],
+        "OU=Users,OU=Detroit,OU=Allied Advertising,DC=det,DC=alliedadvpub,DC=com",
         "Allied Integrated Marketing"
     ],
     'FLORIDA': [
@@ -194,6 +208,7 @@ dynamicOfficeDict = {
         extList['FLORIDA']['server'],
         extList['FLORIDA']['state'],
         extList['FLORIDA']['address'],
+        "OU=Users,OU=Florida,OU=Allied Advertising,DC=alliedadvpub,DC=com",
         "Allied Integrated Marketing"
     ],
     'HOUSTON': [
@@ -207,6 +222,7 @@ dynamicOfficeDict = {
         extList['HOUSTON']['server'],
         extList['HOUSTON']['state'],
         extList['HOUSTON']['address'],
+        "OU=Users,OU=Houston,OU=Texas,OU=Allied Advertising,DC=alliedadvpub,DC=com",
         "Allied Integrated Marketing"
     ],
     'KANSASCITY': [
@@ -220,6 +236,7 @@ dynamicOfficeDict = {
         extList['KANSASCITY']['server'],
         extList['KANSASCITY']['state'],
         extList['KANSASCITY']['address'],
+        "OU=Users,OU=Kansas City,OU=Allied Advertising,DC=kci,DC=alliedadvpub,DC=com",
         "Allied Integrated Marketing"
     ],
     'LASVEGAS': [
@@ -233,6 +250,7 @@ dynamicOfficeDict = {
         extList['LASVEGAS']['server'],
         extList['LASVEGAS']['state'],
         extList['LASVEGAS']['address'],
+        "OU=Users,OU=Las Vegas,OU=Allied Advertising,DC=alliedadvpub,DC=com",
         "Allied Integrated Marketing"
     ],
     'MINNEAPOLIS': [
@@ -246,6 +264,7 @@ dynamicOfficeDict = {
         extList['MINNEAPOLIS']['server'],
         extList['MINNEAPOLIS']['state'],
         extList['MINNEAPOLIS']['address'],
+        "OU=Users,OU=Minneapolis,OU=Allied Advertising,DC=msp,DC=alliedadvpub,DC=com",
         "Allied Integrated Marketing"
     ],
     'PHILADELPHIA': [
@@ -259,6 +278,7 @@ dynamicOfficeDict = {
         extList['PHILADELPHIA']['server'],
         extList['PHILADELPHIA']['state'],
         extList['PHILADELPHIA']['address'],
+        "OU=Users,OU=Philadelphia,OU=Allied Advertising,DC=phl,DC=alliedadvpub,DC=com",
         "Allied Integrated Marketing"
     ],
     'PHOENIX': [
@@ -272,6 +292,7 @@ dynamicOfficeDict = {
         extList['PHOENIX']['server'],
         extList['PHOENIX']['state'],
         extList['PHOENIX']['address'],
+        "OU=Users,OU=Phoenix,OU=Allied Advertising,DC=phx,DC=alliedadvpub,DC=com",
         "Allied Integrated Marketing"
     ],
     'SANFRANCISCO': [
@@ -285,6 +306,7 @@ dynamicOfficeDict = {
         extList['SANFRANCISCO']['server'],
         extList['SANFRANCISCO']['state'],
         extList['SANFRANCISCO']['address'],
+        "OU=Users,OU=San Francisco,OU=Allied Advertising,DC=sfo,DC=alliedadvpub,DC=com",
         "Allied Integrated Marketing"
     ],
     'SANDIEGO': [
@@ -298,6 +320,7 @@ dynamicOfficeDict = {
         extList['SANDIEGO']['server'],
         extList['SANDIEGO']['state'],
         extList['SANDIEGO']['address'],
+        "OU=Users,OU=San Diego,OU=Allied Advertising,DC=san,DC=alliedadvpub,DC=com",
         "Allied Integrated Marketing"
     ],
     'SEATTLE': [
@@ -311,6 +334,7 @@ dynamicOfficeDict = {
         extList['SEATTLE']['server'],
         extList['SEATTLE']['state'],
         extList['SEATTLE']['address'],
+        "OU=Users,OU=Seattle,OU=Allied Advertising,DC=sea,DC=alliedadvpub,DC=com",
         "Allied Integrated Marketing"
     ],
     'STLOUIS': [
@@ -324,6 +348,7 @@ dynamicOfficeDict = {
         extList['STLOUIS']['server'],
         extList['STLOUIS']['state'],
         extList['STLOUIS']['address'],
+        "OU=Users,OU=St. Louis,OU=Allied Advertising,DC=stlouis,DC=alliedadvpub,DC=com",
         "Allied Integrated Marketing"
     ],
     'WASHINGTONDC': [
@@ -337,6 +362,7 @@ dynamicOfficeDict = {
         extList['WASHINGTONDC']['server'],
         extList['WASHINGTONDC']['state'],
         extList['WASHINGTONDC']['address'],
+        "OU=Users,OU=DC,OU=Allied Advertising,DC=wdc,DC=alliedadvpub,DC=com",
         "Allied Integrated Marketing"
     ],
     'TORONTO': [
@@ -350,6 +376,7 @@ dynamicOfficeDict = {
         extList['TORONTO']['server'],
         extList['TORONTO']['state'],
         extList['TORONTO']['address'],
+        "OU=Users,OU=Toronto,OU=Allied Advertising,DC=alliedadvpub,DC=com",
         "Allied Integrated Marketing"
     ],
     'GCM-LA': [
@@ -363,6 +390,7 @@ dynamicOfficeDict = {
         extList['GCM-LA']['server'],
         extList['GCM-LA']['state'],
         extList['GCM-LA']['address'],
+        "OU=Los Angeles,OU=Users,OU=GCM,OU=Allied Advertising,DC=alliedadvpub,DC=com",
         "Allied Experiential"
    ],
     'GCM-NY': [
@@ -376,6 +404,7 @@ dynamicOfficeDict = {
         extList['GCM-NY']['server'],
         extList['GCM-NY']['state'],
         extList['GCM-NY']['address'],
+        "OU=New York,OU=Users,OU=GCM,OU=Allied Advertising,DC=alliedadvpub,DC=com",
         "Allied Experiential"
    ]
 }
