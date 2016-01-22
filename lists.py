@@ -2,7 +2,7 @@ extList = {
     'ERMKT': {
         'city':'New York',
         'company':'ERM Research',
-        'country':'United States',
+        'country':'US',
         'description':'ERM',
         'office':'ERM',
         'zipcode':'10001',
@@ -14,7 +14,7 @@ extList = {
     'LIVE-CHI': {
         'city':'Chicago',
         'company':'Allied Live',
-        'country':'United States',
+        'country':'US',
         'description':'AL-Chicago',
         'office':'Chicago',
         'zipcode':'FILL IN',
@@ -26,7 +26,7 @@ extList = {
     'LIVE-WDC': {
         'city':'Washington DC',
         'company':'Allied Live',
-        'country':'United States',
+        'country':'US',
         'description':'AL-WDC',
         'office':'DC',
         'zipcode':'FILL IN',
@@ -38,7 +38,7 @@ extList = {
     'LIVE-LA': {
         'city':'Los Angeles',
         'company':'Allied Live',
-        'country':'United States',
+        'country':'US',
         'description':'AL-LA',
         'office':'Los Angeles',
         'zipcode':'FILL IN',
@@ -50,7 +50,7 @@ extList = {
     'BOSTON': {
         'city':'Boston',
         'company':'Allied Integrated Marketing',
-        'country':'United States',
+        'country':'US',
         'description':'Boston',
         'office':'Boston',
         'zipcode':'FILL IN',
@@ -62,7 +62,7 @@ extList = {
     'NEWYORK': {
         'city':'New York',
         'company':'Allied Integrated Marketing',
-        'country':'United States',
+        'country':'US',
         'description':'New York',
         'office':'New York',
         'zipcode':'10001',
@@ -74,7 +74,7 @@ extList = {
     'LOSANGELES': {
         'city':'Los Angeles',
         'company':'Allied Integrated Marketing',
-        'country':'United States',
+        'country':'US',
         'description':'Los Angeles',
         'office':'Los Angeles',
         'zipcode':'FILL IN',
@@ -86,7 +86,7 @@ extList = {
     'ATLANTA': {
         'city':'Atlanta',
         'company':'Allied Integrated Marketing',
-        'country':'United States',
+        'country':'US',
         'description':'Atlanta',
         'office':'Atlanta',
         'zipcode':'FILL IN',
@@ -98,7 +98,7 @@ extList = {
     'ATLANTA-VININGS': {
         'city':'Atlanta',
         'company':'Allied Integrated Marketing',
-        'country':'United States',
+        'country':'US',
         'description':'Atlanta-MI',
         'office':'Atlanta-MI',
         'zipcode':'FILL IN',
@@ -110,7 +110,7 @@ extList = {
     'CHICAGO': {
         'city':'Chicago',
         'company':'Allied Integrated Marketing',
-        'country':'United States',
+        'country':'US',
         'description':'Chicago',
         'office':'Chicago',
         'zipcode':'FILL IN',
@@ -122,7 +122,7 @@ extList = {
     'CLEVELAND': {
         'city':'Cleveland',
         'company':'Allied Integrated Marketing',
-        'country':'United States',
+        'country':'US',
         'description':'Cleveland',
         'office':'Cleveland',
         'zipcode':'FILL IN`',
@@ -134,7 +134,7 @@ extList = {
     'DALLAS': {
         'city':'Dallas',
         'company':'Allied Integrated Marketing',
-        'country':'United States',
+        'country':'US',
         'description':'Dallas',
         'office':'Dallas',
         'zipcode':'FILL IN',
@@ -146,7 +146,7 @@ extList = {
     'DENVER': {
         'city':'Denver',
         'company':'Allied Integrated Marketing',
-        'country':'United States',
+        'country':'US',
         'description':'Denver',
         'office':'Denver',
         'zipcode':'FILL IN',
@@ -158,7 +158,7 @@ extList = {
     'DETROIT': {
         'city':'Detroit',
         'company':'Allied Integrated Marketing',
-        'country':'United States',
+        'country':'US',
         'description':'Detroit',
         'office':'Detroit',
         'zipcode':'FILL IN',
@@ -170,7 +170,7 @@ extList = {
     'FLORIDA': {
         'city':'Fort Lauderdale',
         'company':'Allied Integrated Marketing',
-        'country':'United States',
+        'country':'US',
         'description':'Florida',
         'office':'Florida',
         'zipcode':'FILL IN',
@@ -182,7 +182,7 @@ extList = {
     'HOUSTON': {
         'city':'Houston',
         'company':'Allied Integrated Marketing',
-        'country':'United States',
+        'country':'US',
         'description':'Houston',
         'office':'Houston',
         'zipcode':'FILL IN',
@@ -194,7 +194,7 @@ extList = {
     'KANSASCITY': {
         'city':'Kansas City',
         'company':'Allied Integrated Marketing',
-        'country':'United States',
+        'country':'US',
         'description':'Kansas City',
         'office':'Kansas City',
         'zipcode':'FILL IN',
@@ -206,7 +206,7 @@ extList = {
     'LASVEGAS': {
         'city':'Las Vegas',
         'company':'Allied Integrated Marketing',
-        'country':'United States',
+        'country':'US',
         'description':'Las Vegas',
         'office':'Las Vegas',
         'zipcode':'FILL IN',
@@ -218,7 +218,7 @@ extList = {
     'MINNEAPOLIS': {
         'city':'Minneapolis',
         'company':'Allied Integrated Marketing',
-        'country':'United States',
+        'country':'US',
         'description':'Minneapolis',
         'office':'Minneapolis',
         'zipcode':'FILL IN',
@@ -230,7 +230,7 @@ extList = {
     'PHILADELPHIA': {
         'city':'Philadelphia',
         'company':'Allied Integrated Marketing',
-        'country':'United States',
+        'country':'US',
         'description':'Philadelphia',
         'office':'Philadelphia',
         'zipcode':'FILL IN',
@@ -242,7 +242,7 @@ extList = {
     'PHOENIX': {
         'city':'Phoenix',
         'company':'Allied Integrated Marketing',
-        'country':'United States',
+        'country':'US',
         'description':'Phoenix',
         'office':'Phoenix',
         'zipcode':'FILL IN',
@@ -254,7 +254,7 @@ extList = {
     'SANFRANCISCO': {
         'city':'San Francisco',
         'company':'Allied Integrated Marketing',
-        'country':'United States',
+        'country':'US',
         'description':'San Francisco',
         'office':'San Francisco',
         'zipcode':'FILL IN',
@@ -266,7 +266,7 @@ extList = {
     'SANDIEGO': {
         'city':'San Diego',
         'company':'Allied Integrated Marketing',
-        'country':'United States',
+        'country':'US',
         'description':'San Diego',
         'office':'San Diego',
         'zipcode':'FILL IN',
@@ -278,7 +278,7 @@ extList = {
     'SEATTLE': {
         'city':'Seattle',
         'company':'Allied Integrated Marketing',
-        'country':'United States',
+        'country':'US',
         'description':'Seattle',
         'office':'Seattle',
         'zipcode':'FILL IN',
@@ -290,7 +290,7 @@ extList = {
     'STLOUIS': {
         'city':'St. Louis',
         'company':'Allied Integrated Marketing',
-        'country':'United States',
+        'country':'US',
         'description':'St. Louis',
         'office':'St. Louis',
         'zipcode':'FILL IN',
@@ -302,7 +302,7 @@ extList = {
     'WASHINGTONDC': {
         'city':'Washington DC',
         'company':'Allied Integrated Marketing',
-        'country':'United States',
+        'country':'US',
         'description':'Washington DC',
         'office':'Washington DC',
         'zipcode':'FILL IN',
@@ -314,7 +314,7 @@ extList = {
     'TORONTO': {
         'city':'Toronto',
         'company':'Allied Integrated Marketing',
-        'country':'Canada',
+        'country':'CA',
         'description':'Toronto',
         'office':'Toronto',
         'zipcode':'FILL IN',
@@ -326,7 +326,7 @@ extList = {
     'GCM-LA': {
         'city':'Los Angeles',
         'company':'Allied Integrated Marketing',
-        'country':'United States',
+        'country':'US',
         'description':'GCM-Los Angeles',
         'office':'GCM-Los Angeles',
         'zipcode':'FILL IN',
@@ -338,7 +338,7 @@ extList = {
     'GCM-NY': {
         'city':'New York',
         'company':'Allied Integrated Marketing',
-        'country':'United States',
+        'country':'US',
         'description':'GCM-New York',
         'office':'GCM-New York',
         'zipcode':'FILL IN',
