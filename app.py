@@ -38,36 +38,6 @@ def home():
 def useradd():
     error = None
     if request.method == 'POST':
-        if request.form['addeduser'] and request.form['city'] == 'ERMKT':
-            CITYVAR = dynamicOfficeDict[request.form['city']][0]
-            USERNAMEVAR = request.form['addeduser'] 
-            DISPLNAMEVAR = request.form['addeduser']
-            GIVENNAMEVAR = None 
-            SURNAMEVAR = None
-            TITLEVAR = None 
-            UPNVAR = None 
-            flash('Ah, ERM.  Paste this into powershell: New-ADUser -Name ' + DISPLNAMEVAR + ' -City ' + CITYVAR)
-            return redirect(url_for('powershell'))
-        elif request.form['addeduser'] and request.form['city']:
-            USERNAMEVAR = request.form['addeduser'] 
-            DISPLNAMEVAR = request.form['addeduser']
-            GIVENNAMEVAR = None 
-            SURNAMEVAR = None
-            TITLEVAR = None 
-            UPNVAR = None 
-
-            flash('Paste this into powershell: New-ADUser -Name ' + DISPLNAMEVAR + ' -City ' + request.form['city'])
-            return redirect(url_for('powershell'))
-        else:
-            error = 'Please add both values; they are required.'
-    return render_template('useradd.html', error=error)
-
-
-@app.route('/BIGuseradd', methods=['GET', 'POST'])
-@login_required
-def BIGuseradd():
-    error = None
-    if request.method == 'POST':
         if request.form['firstname'] and request.form['lastname'] and request.form['city'] != 'null' and request.form['position'] and request.form['password']:
             cityInput = request.form['city']  
             CITYVAR = dynamicOfficeDict[cityInput][0]
@@ -82,10 +52,8 @@ def BIGuseradd():
             SERVERVAR = dynamicOfficeDict[cityInput][7]
             STATEVAR = dynamicOfficeDict[cityInput][8]
             ADDRESSVAR = dynamicOfficeDict[cityInput][9]
-            PASSWORDVAR = request.form['password'] 
             GIVENNAMEVAR = request.form['firstname'] 
             SURNAMEVAR = request.form['lastname']
-            DISPLNAMEVAR = GIVENNAMEVAR + ' ' + SURNAMEVAR
             USERNAMEVAR = GIVENNAMEVAR[0] + SURNAMEVAR 
             TITLEVAR = request.form['position'] 
             UPNVAR = USERNAMEVAR + '@alliedim.com' 
@@ -94,7 +62,7 @@ def BIGuseradd():
             return redirect(url_for('powershell'))
         else:
             error = 'Please add all values; they are required.'
-    return render_template('BIGuseradd.html', error=error)
+    return render_template('useradd.html', error=error)
 
 
 @app.route('/powershell')

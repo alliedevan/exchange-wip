@@ -4,10 +4,50 @@
 <h1>Who will you add?</h1>
 <br>
 <form action="" method="post">
-  <input type="text" placeholder="Name: eg John" name="addeduser" value="{{
-    request.form.addeduser }}">
-  <input type="text" placeholder="City: eg Redmond" name="city" value="{{
-    request.form.city }}">
+  <input type="text" placeholder="First name: eg John" name="firstname" value="{{
+    request.form.firstname }}">
+  <br>
+  <input type="text" placeholder="Last name: eg Randus" name="lastname" value="{{
+    request.form.lastname }}">
+  <br>
+  <input type="text" placeholder="Title: eg Coordinator" name="position" value="{{
+    request.form.position }}">
+  <br>
+  <br>
+  <select name="city" size="1">
+   <option value="null">Choose an office</option>
+   <option value="ERMKT">ERM Research</option>
+   <option value="LIVE-CHI">Allied Live Chicago</option>
+   <option value="LIVE-WDC">Allied Live Washington DC</option>
+   <option value="LIVE-LA">Allied Live Los Angeles</option>
+   <option value="BOSTON">Boston</option>
+   <option value="NEWYORK">New York</option>
+   <option value="LOSANGELES">Los Angeles</option>
+   <option value="ATLANTA">Atlanta</option>
+   <option value="ATLANTA-VININGS">Atlanta Vinings</option>
+   <option value="CHICAGO">Chicago</option>
+   <option value="CLEVELAND">Cleveland</option>
+   <option value="DALLAS">Dallas</option>
+   <option value="DENVER">Denver</option>
+   <option value="DETROIT">Detroit</option>
+   <option value="FLORIDA">Florida</option>
+   <option value="HOUSTON">Houston</option>
+   <option value="KANSASCITY">Kansas City</option>
+   <option value="LASVEGAS">Las Vegas</option>
+   <option value="MINNEAPOLIS">Minneapolis</option>
+   <option value="PHILADELPHIA">Philadelphia</option>
+   <option value="PHOENIX">Phoenix</option>
+   <option value="SANFRANCISCO">San Francisco</option>
+   <option value="SANDIEGO">San Diego</option>
+   <option value="SEATTLE">Seattle</option>
+   <option value="STLOUIS">St. Louis</option>
+   <option value="WASHINGTONDC">Washington DC</option>
+   <option value="TORONTO">Toronto</option>
+   <option value="GCM-LA">Allied Experiential - Los Angeles</option>
+   <option value="GCM-NY">Allied Experiential - New York</option>
+  </select>
+  <br>
+  <br>
   <input class="btn btn-default" type="submit" value="Add?">
 </form>
 <br>
